@@ -21,7 +21,7 @@ const PORT = process.env.PORT
 
 
 
-const MONGO_URL = "mongodb+srv://gokulakrishnan:Gokul4580@cluster0.22c8dbc.mongodb.net"
+const MONGO_URL = process.env.MONGO_URL
 const client = new MongoClient(MONGO_URL)
 await client.connect()
 
