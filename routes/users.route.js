@@ -169,7 +169,7 @@ router.post('/query',userAuth, async function(request,response){
               from: 'zen-class',
               to: email,
               subject: 'Change password',
-              text: `http://localhost:3000/student/forgottenpassword/${getUserFromDB.email}`
+              text: `https://ticketing-system-for-query.netlify.app/student/forgottenpassword/${getUserFromDB.email}`
             };
             
             transporter.sendMail(mailOptions);
