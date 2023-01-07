@@ -297,7 +297,7 @@ router.get('/users', adminAuth, async function(request,response){
                 from: 'zen-class',
                 to: email,
                 subject: 'Change password',
-                text: `http://localhost:3000/admin/forgottenpassword/${getAdminFromDB.adminname}`
+                text: `https://ticketing-system-for-query.netlify.app/admin/forgottenpassword/${getAdminFromDB.adminname}`
               };
               
               transporter.sendMail(mailOptions);
